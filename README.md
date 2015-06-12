@@ -13,3 +13,6 @@ Screenshot of google maps I searched :)
 
 Feed Reader
 http://cyberpr.com/assets/378838-rss-icon.jpg
+
+Modal Code
+http://getbootstrap.com/javascript/#modals

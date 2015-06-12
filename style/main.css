@@ -1,7 +1,3 @@
-/* development only */
-ddiv {
-  border: 1px dashed gray;
-}
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -22,9 +18,6 @@ body {
 a {
   color: gray;
   font-weight: 100;
-}
-.container-color {
-  background-color: white;  ;
 }
 .project {
   margin-bottom: 15px;
