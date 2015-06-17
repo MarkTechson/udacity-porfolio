@@ -1,102 +1,121 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>M. Thompson Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet'>
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="scripts/app.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="main-photo" alt="Mark Thompson's Photo" src="img/icon.jpg">
-        </div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="thin-header">Mark Thompson</h1>
-          <h4>Front-End Assassin</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <hr class="thick-rule">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <img class="img-responsive" alt="main image" src="img/main.jpg">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="light-header">Featured Work</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 text-center project">
-          <img class="image-responsive" alt="arcade game project image" src="img/8bit-game.jpg">
-          <h2>HTML5 Arcade Game</h2>
-          <button class="btn btn-default" type="button" data-toggle="modal"
-                  data-project-title="HTML5 Arcade Game"
-                  data-project-description="Using HTML5 canvas and JavaScript I created a browser-based game."
-                  data-project-image="img/8bit-game.jpg"
-                  data-target="#projectModal">View Details</button>
-          <br><br>
-          <a href="">http://github/markitomagic/udacity-html5-game</a>
-        </div>
-        <div class="col-md-4 text-center project">
-          <img class="image-responsive" alt="neighborhood map project image" src="img/neighborhood-map.png">
-          <h2>Neighborhood Map</h2>
-          <button class="btn btn-default" type="button" data-toggle="modal"
-                  data-project-title="Neighborhood Map"
-                  data-project-description="JavaScript and lots of magic with the Google Maps API help to create this fun project."
-                  data-project-image="img/neighborhood-map.png"
-                  data-target="#projectModal">View Details</button>
-          <br><br>
-          <a href="">http://github/markitomagic/udacity-neighborhood-map</a>
-        </div>
-        <div class="col-md-4 text-center project">
-          <img class="image-response" alt="feed reader project image" src="img/rss-feed-icon.jpg">
-          <h2>Feed Reader</h2>
-          <button class="btn btn-default" type="button" data-toggle="modal"
-                  data-project-title="Feed Reader"
-                  data-project-description="Interesting project on creating a RSS feader project for the web."
-                  data-project-image="img/rss-feed-icon.jpg"
-                  data-target="#projectModal">View Details</button>
-          <br><br>
-          <a href="">http://github/markitomagic/udacity-feedreader</a>
-        </div>
-      </div>
-    </div>
-    <!-- Define the modal for the project here -->
-    <div class="modal fade" id="projectModal" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="gridSystemModalLabel">Project Title</h4>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <img alt="default image" class="project-image" src="http://placehold.it/355x250">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <title>M. Thompson Portfolio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="scripts/app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="main-photo image-responsive" alt="Mark Thompson's Photo" src="img/icon.jpg">
+                    </div>
+                    <div class="col-md-6 text-right text-uppercase">
+                        <h1 class="thin-header">Mark Thompson</h1>
+                        <h4>Front-End Assassin</h4>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="project-description"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr class="thick-rule">
+                    </div>
                 </div>
-              </div>
+            </header>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive" alt="main image" src="img/main.jpg">
+                </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
-          </div>
+            <section id="projects">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="light-header">Featured Work</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <article class="col-md-4 text-center project">
+                        <headReer>
+                            <img class="image-responsive" alt="arcade game project image" src="img/8bit-game.jpg">
+                            <h2>HTML5 Arcade Game</h2>
+                        </header>
+                        <button class="btn btn-default" type="button" data-toggle="modal"
+                            data-project-title="HTML5 Arcade Game"
+                            data-project-description="Using HTML5 canvas and JavaScript I created a browser-based game."
+                            data-project-image="img/8bit-game.jpg"
+                            data-target="#projectModal">View Details</button>
+                        <br><br>
+                        <footer>
+                            <a href="">http://github/markitomagic/udacity-html5-game</a>
+                        </footer>
+                    </article>
+                    <article class="col-md-4 text-center project">
+                        <header>
+                            <img class="image-responsive" alt="neighborhood map project image" src="img/neighborhood-map.png">
+                            <h2>Neighborhood Map</h2>
+                        </header>
+                        <button class="btn btn-default" type="button" data-toggle="modal"
+                            data-project-title="Neighborhood Map"
+                            data-project-description="JavaScript and lots of magic with the Google Maps API help to create this fun project."
+                            data-project-image="img/neighborhood-map.png"
+                            data-target="#projectModal">View Details</button>
+                        <br><br>
+                        <footer>
+                            <a href="">http://github/markitomagic/udacity-neighborhood-map</a>
+                        </footer>
+                    </article>
+                    <article class="col-md-4 text-center project">
+                        <header>
+                            <img class="image-response" alt="feed reader project image" src="img/rss-feed-icon.jpg">
+                            <h2>Feed Reader</h2>
+                        </header>
+                        <button class="btn btn-default" type="button" data-toggle="modal"
+                            data-project-title="Feed Reader"
+                            data-project-description="Interesting project on creating a RSS feader project for the web."
+                            data-project-image="img/rss-feed-icon.jpg"
+                            data-target="#projectModal">View Details</button>
+                        <br><br>
+                        <footer>
+                            <a href="">http://github/markitomagic/udacity-feedreader</a>
+                        </footer>
+                    </article>
+                </div>
+            </section>
         </div>
-      </div>
-    </div>
-  </body>
+        <!-- Define the modal for the project here -->
+        <div class="modal fade" id="projectModal" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">Project Title</h4>
+                    </header>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img alt="default image" class="project-image" src="http://placehold.it/355x250">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="project-description"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

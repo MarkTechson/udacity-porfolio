@@ -1,24 +1,30 @@
 body {
   font-family: 'Lato', sans-serif;
 }
-.main-photo {
-  border-radius: 50%;
-  border: 5px solid #6ec1a7;
-}
-.thick-rule {
-  border-top-width: 10px;
-  border-color: #6ec1a7;
-}
-.thin-header {
-  font-weight: 100;
-}
-.light-header {
-  color: gray;
-}
+
 a {
   color: gray;
   font-weight: 100;
 }
+
+.main-photo {
+  border-radius: 50%;
+  border: 5px solid #6ec1a7;
+}
+
+.thick-rule {
+  border-top-width: 10px;
+  border-color: #6ec1a7;
+}
+
+.thin-header {
+  font-weight: 100;
+}
+
+.light-header {
+  color: gray;
+}
+
 .project {
   margin-bottom: 15px;
 }
